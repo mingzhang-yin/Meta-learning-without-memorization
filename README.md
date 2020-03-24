@@ -2,6 +2,16 @@
 * Implemention of meta-regularizers as described in [Meta-Learning without Memorization](https://openreview.net/pdf?id=BklEFpEYwS) by Mingzhang Yin, George Tucker, Mingyuan Zhou, Sergey Levine, Chelsea Finn.
 * Forked from [Google Research Repository](https://github.com/google-research/google-research/tree/master/meta_learning_without_memorization) (2020.01.01), maintained at [Google Research Repository](https://github.com/google-research/google-research/tree/master/meta_learning_without_memorization).
 
+Below are the paper to cite if you find the algorithms in this repository useful in your own research:
+```
+@inproceedings{yin2020metalearning,
+title={Meta-Learning without Memorization},
+author={Mingzhang Yin and George Tucker and Mingyuan Zhou and Sergey Levine and Chelsea Finn},
+booktitle={International Conference on Learning Representations},
+year={2020},
+}
+```
+
 The ability to learn new concepts with small amounts of data is a critical aspect of intelligence that has proven challenging for deep learning methods. Meta-learning has emerged as a promising technique for leveraging data from previous tasks to enable efficient learning of new tasks. However, most meta-learning algorithms implicitly require that the meta-training tasks be *mutually-exclusive*, such that no single model can solve all of the tasks at once. For example, when creating tasks for few-shot image classification, prior work uses a per-task random assignment of image classes to N-way classification labels. If this is not done, the meta-learner can ignore the task training data and learn a single model that performs all of the meta-training tasks zero-shot, but does not adapt effectively to new image classes. This requirement means that the user must take great care in designing the tasks, for example by shuffling labels or removing task identifying information from the inputs. In some domains, this makes meta-learning entirely inapplicable. In this paper, we address this challenge by designing a meta-regularization objective using information theory that places precedence on data-driven adaptation. This causes the meta-learner to decide what must be learned from the task training data and what should be inferred from the task testing input. By doing so, our algorithm can successfully use data from *non-mutually-exclusive* tasks to efficiently adapt to novel tasks. We demonstrate its applicability to both contextual and gradient-based meta-learning algorithms, and apply it in practical settings where applying standard meta-learning has been difficult. Our approach substantially outperforms standard meta-learning algorithms in these settings.
 
 This repository:
