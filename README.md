@@ -2,6 +2,9 @@
 * Implemention of meta-regularizers as described in [Meta-Learning without Memorization](https://openreview.net/pdf?id=BklEFpEYwS) by Mingzhang Yin, George Tucker, Mingyuan Zhou, Sergey Levine, Chelsea Finn.
 * Forked from [Google Research Repository](https://github.com/google-research/google-research/tree/master/meta_learning_without_memorization) (2020.01.01), maintained at [Google Research Repository](https://github.com/google-research/google-research/tree/master/meta_learning_without_memorization).
 
+
+In this paper, we address the memorization problem by designing a meta-regularization objective using information theory that places precedence on data-driven adaptation. This causes the meta-learner to decide what must be learned from the task training data and what should be inferred from the task testing input. By doing so, our algorithm can successfully use data from *non-mutually-exclusive* tasks to efficiently adapt to novel tasks. We demonstrate its applicability to both contextual and gradient-based meta-learning algorithms, and apply it in practical settings where applying standard meta-learning has been difficult. Our approach substantially outperforms standard meta-learning algorithms in these settings.
+
 Below are the paper to cite if you find the algorithms in this repository useful in your own research:
 ```
 @inproceedings{yin2020metalearning,
@@ -11,8 +14,6 @@ booktitle={International Conference on Learning Representations},
 year={2020},
 }
 ```
-
-In this paper, we address the memorization problem by designing a meta-regularization objective using information theory that places precedence on data-driven adaptation. This causes the meta-learner to decide what must be learned from the task training data and what should be inferred from the task testing input. By doing so, our algorithm can successfully use data from *non-mutually-exclusive* tasks to efficiently adapt to novel tasks. We demonstrate its applicability to both contextual and gradient-based meta-learning algorithms, and apply it in practical settings where applying standard meta-learning has been difficult. Our approach substantially outperforms standard meta-learning algorithms in these settings.
 
 This repository:
 * Provides code to generate the pose regression dataset used in the paper.
