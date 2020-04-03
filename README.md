@@ -5,7 +5,7 @@
 
 In this paper, we address the memorization problem by designing a meta-regularization objective using information theory that places precedence on data-driven adaptation. This causes the meta-learner to decide what must be learned from the task training data and what should be inferred from the task testing input. By doing so, our algorithm can successfully use data from *non-mutually-exclusive* tasks to efficiently adapt to novel tasks. We demonstrate its applicability to both contextual and gradient-based meta-learning algorithms, and apply it in practical settings where applying standard meta-learning has been difficult. Our approach substantially outperforms standard meta-learning algorithms in these settings.
 
-Below are the paper to cite if you find the algorithms in this repository useful in your own research:
+Below is the paper to cite if you find the algorithms in this repository useful in your own research:
 ```
 @inproceedings{yin2020metalearning,
 title={Meta-Learning without Memorization},
