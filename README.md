@@ -8,10 +8,10 @@ In this paper, we address the memorization problem by designing a meta-regulariz
 Below is the paper to cite if you find the algorithms in this repository useful in your own research:
 ```
 @inproceedings{yin2020metalearning,
-title={Meta-Learning without Memorization},
-author={Mingzhang Yin and George Tucker and Mingyuan Zhou and Sergey Levine and Chelsea Finn},
-booktitle={International Conference on Learning Representations},
-year={2020},
+  title={Meta-Learning without Memorization},
+  author={Mingzhang Yin and George Tucker and Mingyuan Zhou and Sergey Levine and Chelsea Finn},
+  booktitle={International Conference on Learning Representations},
+  year={2020},
 }
 ```
 
