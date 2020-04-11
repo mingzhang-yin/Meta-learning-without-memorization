@@ -27,10 +27,6 @@ Requirements:
 * gym
 * mujoco-py
 
-```
-pip install tensorflow==1.14
-pip install tensorflow-probability==0.7
-```
 
 Step 1: Download CAD models from [Beyond PASCAL: A Benchmark for 3D Object Detection in the Wild](http://cvgl.stanford.edu/projects/pascal3d.html) [ftp://cs.stanford.edu/cs/cvgl/PASCAL3D+_release1.1.zip](ftp://cs.stanford.edu/cs/cvgl/PASCAL3D+_release1.1.zip) and use the CAD folder.
 
@@ -57,6 +53,12 @@ python data_gen.py --data_dir=${DATA_DIR}/rotate_resize
 This generates two pickle files: train_data.pkl and val_data.pkl.
 
 ## Train models on pose regression dataset
+
+```
+pip install tensorflow==1.14
+pip install tensorflow-probability==0.7
+```
+
 See pose_code/run.sh for examples of training the various algorithms.
 
 This is not an officially supported Google product. It is maintained by George Tucker (gjt@google.com, [@georgejtucker](https://twitter.com/georgejtucker), github user: gjtucker).
