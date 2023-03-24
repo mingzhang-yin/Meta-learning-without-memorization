@@ -1,5 +1,5 @@
 # tfp-nightly
-tensorflow==1.15.2
+tensorflow==2.11.1
 absl-py>=0.5.0
 matplotlib>=2.1.0
 numpy>=1.15.2
